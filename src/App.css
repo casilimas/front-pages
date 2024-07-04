@@ -1,0 +1,868 @@
+ /* --------------------estilos barra de navegacion---------------------------------- */
+
+.navbar {
+    background-color: #8ed12391;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar .nav-link-Home,
+  .navbar .nav-link-Crear,
+  .navbar .nav-link-Buscar,
+  .navbar .nav-link-Listar,
+  .navbar .nav-link-Editar,
+  .navbar .nav-link-Borrar {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  .navbar .nav-link-Home:hover,
+  .navbar .nav-link-Crear:hover,
+  .navbar .nav-link-Buscar:hover,
+  .navbar .nav-link-Listar:hover,
+  .navbar .nav-link-Editar:hover,
+  .navbar .nav-link-Borrar:hover {
+    background-color: #76b865;
+    color: black;
+    border-radius: 20px;
+  }
+  
+  /* Estilos Responsivos */
+  @media screen and (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar li {
+      margin: 10px 0; /* Márgenes considerables entre los enlaces */
+    }
+  
+    .navbar .nav-link-Home,
+    .navbar .nav-link-Crear,
+    .navbar .nav-link-Buscar,
+    .navbar .nav-link-Listar,
+    .navbar .nav-link-Editar,
+    .navbar .nav-link-Borrar {
+      padding: 10px 20px;
+      width: 100%; /* Asegura que los enlaces ocupen todo el ancho */
+      text-align: center; /* Centra el texto */
+    }
+  }
+  
+
+
+
+
+  /* --------------------estilos crear---------------------------------- */
+
+/* Contenedor principal del formulario */
+/* Contenedor principal del formulario */
+.contenedor-crear{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px; /* Añadir padding para dispositivos móviles */
+}
+
+/* Formulario */
+form {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ajustar a 100% para pantallas pequeñas */
+  max-width: 400px; /* Limitar el ancho máximo */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Estilos de los campos del formulario */
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.boton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #45a049;
+}
+
+.titulo-crear {
+  text-align: center;
+  background-color: #eaeeea;
+  color: #45a049;;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .contenedor-crear {
+    padding: 10px; /* Reducir padding en pantallas pequeñas */
+  }
+
+  form {
+    padding: 15px; /* Reducir padding en el formulario */
+    width: 100%; /* Asegurarse de que el formulario ocupe todo el ancho disponible */
+  }
+
+  .boton {
+    padding: 8px; /* Reducir padding del botón */
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 10px; /* Reducir aún más el padding en pantallas muy pequeñas */
+  }
+
+  .boton {
+    padding: 6px; /* Ajustar padding del botón para pantallas muy pequeñas */
+  }
+}
+
+
+ /* --------------------estilos listar---------------------------------- */
+
+
+
+
+
+
+
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 100vh;           /* Asegúrate de que el contenedor ocupe toda la altura de la ventana */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.formulario-token {
+  display: flex;            /* Convierte el contenedor en un flexbox */
+  justify-content: center;  /* Centra el formulario horizontalmente */
+  margin-top: 35px;         /* Añade un espacio de 20px encima del formulario */
+  margin-bottom: 10px;      /* Añade un espacio de 20px debajo del formulario */
+}
+
+
+.formulario-token form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.formulario-token label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.formulario-token input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.boton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.boton:hover {
+  background-color: #45a049;
+}
+
+.contenedor-listar {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 400px;
+  overflow-y: auto;
+}
+
+
+
+.titulo-listar {
+  text-align: center;
+  background-color: #eaeeea;
+  color: #45a049;;
+}
+
+.contenedor-listar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor-listar li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-listar li pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+
+.texto-jason{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 100vh;           /* Asegúrate de que el contenedor ocupe toda la altura de la ventana */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.formulario-token {
+  display: flex;            /* Convierte el contenedor en un flexbox */
+  justify-content: center;  /* Centra el formulario horizontalmente */
+  margin-top: 5px;         /* Añade un espacio de 20px encima del formulario */
+  margin-bottom: 10px;      /* Añade un espacio de 20px debajo del formulario */
+}
+
+
+.formulario-token form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.formulario-token label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.formulario-token input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.boton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.boton:hover {
+  background-color: #45a049;
+}
+
+.contenedor-listar {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 320px;
+  overflow-y: auto;
+}
+
+
+
+.titulo-listar {
+  text-align: center;
+  background-color: #eaeeea;
+  color: #45a049;;
+}
+
+.contenedor-listar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor-listar li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-listar li pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+
+.texto-jason{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .formulario-token form,
+  .contenedor-listar {
+    width: 90%;  /* Ajusta el ancho al 90% del contenedor en pantallas más pequeñas */
+    max-width: none;  /* Anula el máximo ancho */
+  }
+}
+
+@media (max-width: 480px) {
+  .formulario-token form,
+  .contenedor-listar {
+    width: 100%;  /* Ajusta el ancho al 100% del contenedor en pantallas muy pequeñas */
+    max-width: none;  /* Anula el máximo ancho */
+    padding: 10px;  /* Reduce el padding */
+  }
+
+  .formulario-token input {
+    padding: 6px;  /* Reduce el padding de los inputs */
+  }
+
+  .boton {
+    padding: 8px;  /* Reduce el padding del botón */
+  }
+}
+
+/* --------------------estilos buscar---------------------------------- */
+.titulo-buscar {
+  text-align: center;
+  background-color: #eaeeea;
+  color: #45a049;
+}
+
+.container-buscar {
+  background-color: white; /* Establece el color de fondo del contenedor a blanco */
+  padding: 20px; /* Añade un relleno de 20px alrededor del contenido del contenedor */
+  border-radius: 8px; /* Redondea las esquinas del contenedor con un radio de 8px */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra alrededor del contenedor para darle profundidad */
+  width: 90%; /* Establece el ancho del contenedor a 90% */
+  max-width: 400px; /* Establece el ancho máximo del contenedor a 400px */
+  height: 80%; /* Establece la altura del contenedor a 80% */
+  max-height: 500px; /* Establece la altura máxima del contenedor a 500px */
+  overflow-y: auto; /* Añade una barra de desplazamiento vertical si el contenido supera la altura del contenedor */
+  margin: 20px auto; /* Centra el contenedor horizontalmente y añade margen superior e inferior */
+}
+
+.formulario_buscar {
+  width: 100%; /* Ancho completo del contenedor padre */
+  padding: 8px; /* Relleno alrededor del contenido del formulario */
+  margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+  display: flex; /* Usar Flexbox para una mejor alineación */
+  flex-direction: column; /* Alinea los elementos del formulario en columna */
+  align-items: center; /* Centra los elementos del formulario horizontalmente */
+  justify-content: center; /* Centra los elementos del formulario verticalmente */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto del elemento */
+}
+
+.texto-jason-buscar {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 0 auto 20px auto; /* Centra el contenedor horizontalmente */
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #e7e5e5;
+  width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+  padding: 10px; /* Añade relleno para mejorar la apariencia */
+}
+
+.mensaje-backend {
+  font-size: 20px; /* Ajusta el tamaño de la fuente para ser más pequeño y responsivo */
+}
+
+.boton-buscar-en-buscar {
+  background-color: #4CAF50; /* Color de fondo inicial */
+  border: none; /* Sin bordes */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Relleno más compacto */
+  text-align: center; /* Centrado del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar en línea */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  margin: 4px 2px; /* Margen */
+  cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el hover */
+}
+
+.boton-buscar-en-buscar:hover {
+  background-color: #45a049; /* Cambia el color de fondo al pasar el cursor */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .container-buscar {
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+    height: auto; /* Altura automática para ajustarse al contenido */
+    padding: 15px; /* Menos padding en pantallas pequeñas */
+  }
+
+  .formulario_buscar {
+    padding: 6px; /* Menos padding en pantallas pequeñas */
+    margin: 10px auto; /* Menos margen en pantallas pequeñas */
+  }
+
+  .texto-jason-buscar {
+    font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    padding: 8px; /* Menos padding en pantallas pequeñas */
+  }
+
+  .boton-buscar-en-buscar {
+    padding: 8px 16px; /* Menos padding en pantallas pequeñas */
+    font-size: 13px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+
+  .mensaje-backend {
+    font-size: 18px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .container-buscar {
+    width: 100%; /* Ancho completo en pantallas muy pequeñas */
+    height: auto; /* Altura automática para ajustarse al contenido */
+    padding: 10px; /* Menos padding en pantallas muy pequeñas */
+  }
+
+  .formulario_buscar {
+    padding: 4px; /* Menos padding en pantallas muy pequeñas */
+    margin: 5px auto; /* Menos margen en pantallas muy pequeñas */
+  }
+
+  .texto-jason-buscar {
+    font-size: 12px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+    padding: 6px; /* Menos padding en pantallas muy pequeñas */
+  }
+
+  .boton-buscar-en-buscar {
+    padding: 6px 12px; /* Menos padding en pantallas muy pequeñas */
+    font-size: 12px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+  }
+
+  .mensaje-backend {
+    font-size: 16px; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+  }
+}
+
+
+/* --------------------estilos editar---------------------------------- */
+
+
+.titulo-modificar-usuario {
+  text-align: center;
+  background-color: #eaeeea;
+  color: #45a049;
+}
+
+
+.formulario-editar {
+  display: flex;            /* Convierte el contenedor en un flexbox */
+  justify-content: center;  /* Centra el formulario horizontalmente */
+  align-items: center;      /* Centra el formulario verticalmente */
+  margin: auto;             /* Centra el formulario dentro de su contenedor */
+  width: 100%;              /* Ancho completo del contenedor padre */
+  max-width: 400px;         /* Establece un ancho máximo para el formulario */
+  padding: 20px;            /* Relleno alrededor del contenido del formulario */
+  background-color: #f9f9f9; /* Color de fondo del formulario */
+  border-radius: 8px;       /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+
+.boton-editar {
+  width: 100%;               /* Abarca todo el ancho del contenedor */
+  background-color: #45a049; /* Color de fondo */
+  border: none;              /* Sin bordes */
+  color: white;              /* Color del texto */
+  padding: 10px;             /* Relleno */
+  text-align: center;        /* Centrado del texto */
+  text-decoration: none;     /* Sin subrayado */
+  display: block;            /* Mostrar como bloque */
+  font-size: 16px;           /* Tamaño de fuente */
+  margin-top: 10px;          /* Margen superior */
+  cursor: pointer;           /* Cursor de puntero al pasar sobre el botón */
+  border-radius: 8px;        /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el hover */
+}
+
+.boton-editar button {
+  width: 100%;               /* Abarca todo el ancho del contenedor */
+  background-color: #3d8d41; /* Color de fondo */
+  border: none;              /* Sin bordes */
+  color: white;              /* Color del texto */
+  padding: 10px;             /* Relleno */
+  text-align: center;        /* Centrado del texto */
+  text-decoration: none;     /* Sin subrayado */
+  display: block;            /* Mostrar como bloque */
+  font-size: 16px;           /* Tamaño de fuente */
+  cursor: pointer;           /* Cursor de puntero al pasar sobre el botón */
+  border-radius: 8px;        /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el hover */
+}
+
+.boton-editar button:hover {
+  background-color: #3e8e41; /* Cambia el color de fondo al pasar el cursor */
+  transform: scale(1.05);    /* Aumenta ligeramente el tamaño del botón */
+}
+
+
+.contenedor-formulario {
+  display: flex;            /* Convierte el contenedor en un flexbox */
+  justify-content: center;  /* Centra el formulario horizontalmente */
+  height: 100vh;            /* Ocupa toda la altura de la ventana */
+  align-items: center;      /* Centra el formulario verticalmente */
+}
+
+
+
+
+.formulario-edicion {
+  display: flex;            /* Convierte el contenedor en un flexbox */
+  flex-direction: column;   /* Alinea los elementos del formulario en columna */
+  align-items: center;      /* Centra los elementos del formulario horizontalmente */
+  justify-content: center;  /* Centra los elementos del formulario verticalmente */
+  width: 100%;              /* Ancho completo del contenedor padre */
+  max-width: 400px;         /* Establece un ancho máximo para el formulario */
+  margin: 0 auto;           /* Centra el contenedor horizontalmente */
+  padding: 20px;            /* Relleno alrededor del contenido del formulario */
+  background-color: #f9f9f9; /* Color de fondo del formulario */
+  border-radius: 8px;       /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+
+
+.titulo-borrar {
+  text-align: center;
+  background-color: #eaeeea;
+  color: #45a049;
+}
+
+
+.boton-borrar {
+  background-color: #e74c3c; /* Color de fondo rojo */
+  border: none;              /* Sin bordes */
+  color: white;              /* Color del texto */
+  padding: 10px 20px;        /* Relleno */
+  text-align: center;        /* Centrado del texto */
+  text-decoration: none;     /* Sin subrayado */
+  display: inline-block;     /* Mostrar en línea */
+  font-size: 16px;           /* Tamaño de fuente */
+  margin: 4px 2px;           /* Margen */
+  cursor: pointer;           /* Cursor de puntero al pasar sobre el botón */
+  border-radius: 8px;        /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el hover */
+}
+
+.boton-borrar:hover {
+  background-color: #c0392b; /* Color de fondo al pasar el cursor */
+  transform: scale(1.05);    /* Aumenta ligeramente el tamaño del botón */
+}
+
+
+.boton-buscae-borrar {
+  background-color: #b3e069; /* Color de fondo rojo */
+  border: none;              /* Sin bordes */
+  color: white;              /* Color del texto */
+  padding: 10px 20px;        /* Relleno */
+  text-align: center;        /* Centrado del texto */
+  text-decoration: none;     /* Sin subrayado */
+  display: inline-block;     /* Mostrar en línea */
+  font-size: 16px;           /* Tamaño de fuente */
+  margin: 4px 2px;           /* Margen */
+  cursor: pointer;           /* Cursor de puntero al pasar sobre el botón */
+  border-radius: 8px;        /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el hover */
+}
+
+
+.boton-buscae-borrar:hover {
+  background-color: #9be623; /* Color de fondo al pasar el cursor */
+  transform: scale(1.05);    /* Aumenta ligeramente el tamaño del botón */
+}
+
+
+
+
+
+.mensaje-usuario {
+  font-size: 16px;             /* Tamaño de fuente */
+  color: #d9534f;              /* Color del texto, rojo */
+  background-color: #f8d7da;   /* Color de fondo, rosado claro */
+  padding: 10px 20px;          /* Relleno alrededor del texto */
+  border: 1px solid #f5c6cb;   /* Borde alrededor del mensaje */
+  border-radius: 8px;          /* Bordes redondeados */
+  text-align: left;            /* Texto alineado a la izquierda */
+  margin: 20px 0;              /* Margen superior e inferior */
+  width: fit-content;          /* Ajusta el ancho al contenido */
+}
+
+.boton-buscar-editar {
+  background-color: #9be623; /* Color de fondo al pasar el cursor */
+  transform: scale(1.05);    /* Aumenta ligeramente el tamaño del botón */
+  border-radius: 10px;
+}
+
+.boton-buscar-editar:hover {
+  background-color: #cfe600; /* Color de fondo al pasar el cursor */
+  transform: scale(1.05);    /* Aumenta ligeramente el tamaño del botón */
+}
+
+
+
+
+
+.actualizar-usuario-editar {
+  background-color: #e74c3c; /* Color de fondo rojo */
+  border: none;              /* Sin bordes */
+  color: white;              /* Color del texto */
+  padding: 10px 20px;        /* Relleno */
+  text-align: center;        /* Centrado del texto */
+  text-decoration: none;     /* Sin subrayado */
+  display: inline-block;     /* Mostrar en línea */
+  font-size: 16px;           /* Tamaño de fuente */
+  margin: 4px 2px;           /* Margen */
+  cursor: pointer;           /* Cursor de puntero al pasar sobre el botón */
+  border-radius: 8px;        /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el hover */
+}
+.actualizar-usuario-editar:hover {
+  background-color: #cfe600; /* Color de fondo al pasar el cursor */
+  transform: scale(1.05);    /* Aumenta ligeramente el tamaño del botón */
+}
+
+.texto-home {
+  color: black;
+}
+
+
+.layout-texto {
+  width: 350px;          /* Ancho de la caja */
+  height: 550px;         /* Altura de la caja */
+  border: 1px solid rgb(0, 0, 0); /* Borde para referencia visual */
+  padding: 20px;         /* Relleno alrededor del contenido */
+  box-sizing: border-box; /* Incluir padding y borde en el ancho y alto total del elemento */
+  overflow-y: auto;      /* Añadir scroll vertical */
+  margin-top: 20px;
+}
+
+
+.layout {
+  width: 950px;          /* Ancho de la caja */
+  height: 550px;         /* Altura de la caja */
+  border: 1px solid rgb(0, 0, 0); /* Borde para referencia visual */
+  padding: 20px;         /* Relleno alrededor del contenido */
+  box-sizing: border-box; /* Incluir padding y borde en el ancho y alto total del elemento */
+  overflow-y: auto;      /* Añadir scroll vertical */
+  margin-top: -550px;
+  margin-left: 351px;
+}
+
+/* Para pantallas de ancho máximo de 1200px */
+@media (max-width: 1200px) {
+  .layout {
+    width: 80vw; /* 80% del ancho del viewport */
+    height: 70vh; /* 70% de la altura del viewport */
+    margin-left: 10vw; /* Centrado horizontalmente */
+    margin-top: 15vh; /* Espacio superior */
+  }
+}
+
+/* Para pantallas de ancho máximo de 768px */
+@media (max-width: 768px) {
+  .layout {
+    width: 90vw; /* 90% del ancho del viewport */
+    height: 80vh; /* 80% de la altura del viewport */
+    margin-left: 5vw; /* Centrado horizontalmente */
+    margin-top: 10vh; /* Espacio superior */
+  }
+}
+
+/* Para pantallas de ancho máximo de 480px */
+@media (max-width: 480px) {
+  .layout {
+    width: 95vw; /* 95% del ancho del viewport */
+    height: 85vh; /* 85% de la altura del viewport */
+    margin-left: 2.5vw; /* Centrado horizontalmente */
+    margin-top: 7.5vh; /* Espacio superior */
+    padding: 10px; /* Relleno reducido */
+  }
+}
+.layout {
+  display: grid;              /* Establece el contenedor como una cuadrícula */
+  grid-template-columns: 1fr 1fr; /* Define dos columnas de igual ancho */
+  grid-template-rows: 1fr 1fr; /* Define dos filas de igual alto */
+  gap: 20px;                  /* Espacio entre los elementos de la cuadrícula */
+  width: 950px;               /* Ancho del contenedor */
+  height: 550px;              /* Altura del contenedor */
+  padding: 20px;              /* Relleno alrededor del contenido */
+  box-sizing: border-box;     /* Incluir padding y borde en el ancho y alto total del elemento */
+  border: 1px solid rgb(0, 0, 0); /* Borde para referencia visual */
+  overflow-y: auto;           /* Añadir scroll vertical */
+               /* Centrar el contenedor horizontalmente */
+  position: relative;         /* Posición relativa para el contenedor */
+  margin-left: 351px;
+}
+
+.vite, .mongo, .node, .mongoose {
+  display: flex;
+  justify-content: center;    /* Centrar el contenido horizontalmente */
+  align-items: center;        /* Centrar el contenido verticalmente */
+      /* Borde alrededor de cada elemento para referencia visual */
+  padding: 10px;              /* Relleno alrededor del contenido */
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    width: 80vw; /* 80% del ancho del viewport */
+    height: 70vh; /* 70% de la altura del viewport */
+    margin-left: 10vw; /* Centrado horizontalmente */
+    margin-top: 15vh; /* Espacio superior */
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    width: 90vw; /* 90% del ancho del viewport */
+    height: 80vh; /* 80% de la altura del viewport */
+    margin-left: 5vw; /* Centrado horizontalmente */
+    margin-top: 10vh; /* Espacio superior */
+    grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
+    grid-template-rows: repeat(4, 1fr); /* Cuatro filas de igual alto */
+  }
+}
+
+@media (max-width: 480px) {
+  .layout {
+    width: 95vw; /* 95% del ancho del viewport */
+    height: 85vh; /* 85% de la altura del viewport */
+    margin-left: 2.5vw; /* Centrado horizontalmente */
+    margin-top: 7.5vh; /* Espacio superior */
+    padding: 10px; /* Relleno reducido */
+    grid-template-columns: 1fr; /* Una sola columna en pantallas más pequeñas */
+    grid-template-rows: repeat(4, 1fr); /* Cuatro filas de igual alto */
+  }
+}
+
+
+
+
+
+
+/* Efecto de hover para todas las imágenes */
+.vite:hover, .node:hover, .mongo:hover, .mongoose:hover {
+  transform: scale(1.07); /* Efecto de aumento más pronunciado */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5); /* Sombra más amplia y fuerte */
+  transition: transform 0.8s ease, box-shadow 0.8s ease; /* Transición más gradual */
+}
+
+/* Transición de salida para todas las imágenes */
+.vite, .node, .mongo, .mongoose {
+  transition: transform 0.8s ease, box-shadow 0.8s ease; /* Transición de salida gradual */
+}
+
+
+.token {
+  color: #d60303;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
