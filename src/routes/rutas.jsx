@@ -11,7 +11,7 @@ import Navegacion from '../../src/components/NavBar';
 const Rutas = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} /> 
+      <Route path="/front-pages" element={<Home />} /> 
       <Route path="/Home" element={<Home />} />
       <Route path="/Crear" element={<Crear />} />
       <Route path="/Buscar" element={<Buscar />} />
